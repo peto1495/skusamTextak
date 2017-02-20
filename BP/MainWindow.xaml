@@ -1,0 +1,36 @@
+﻿<Window x:Class="BP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Peter Vestenicky" MinHeight="350" Width="659.328">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Height="22" VerticalAlignment="Center" Grid.Row="0">
+            <MenuItem Header="_Subor" SubmenuOpened="SuborOpen">
+                <MenuItem x:Name="SaveMenuItem" Header="Save" Click="SaveMenuItem_Click">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Konto" SubmenuOpened="KontoOpen" >
+                <MenuItem x:Name="PrihlasitMenuItem" Header="_Prihlasit" Click="PrihlasitMenuItem_Click">
+                </MenuItem>
+                <MenuItem x:Name="OdhlasitMenuItem" Header="_Odhlasit" Click="OdhlasitMenuItem_Click">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Server" SubmenuOpened="ServerOpen">
+                <MenuItem x:Name="ZobrazProjektyMenuItem" Header="Zobraz Projekty" Click="ZobrazProjektyMenuItem_Click">
+                </MenuItem>
+                <MenuItem x:Name="StiahniEntityMenuItem" Header="stiahni entity" Click="StiahniEntityMenuItem_Click">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Praca">
+                <MenuItem Header="Nacitaj subory" Click="NacitajSuboru_Click">
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <ListBox x:Name="ListBox" HorizontalAlignment="Left" MinHeight="270" Margin="10,10,10,10" Grid.Row="1" VerticalAlignment="Top" Width="267" />
+        <Button x:Name="ZOBR" Content="ZobrazEntity" HorizontalAlignment="Left" Margin="473,22,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="ZobrazEntoty_Click" IsEnabled="False"/>
+
+    </Grid>
+</Window>

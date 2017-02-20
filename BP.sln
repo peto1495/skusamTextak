@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP", "BP\BP.csproj", "{831CA7D1-EC40-497F-AF9E-CB0EAE55790B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangoMetody", "KangoMetody\KangoMetody.csproj", "{8375ADBA-F06E-4A5D-A670-312443E6C7BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uzivatel", "Uzivatel\Uzivatel.csproj", "{5370F067-ECF2-43D4-8FD1-B949DD07D4F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{831CA7D1-EC40-497F-AF9E-CB0EAE55790B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{831CA7D1-EC40-497F-AF9E-CB0EAE55790B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{831CA7D1-EC40-497F-AF9E-CB0EAE55790B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{831CA7D1-EC40-497F-AF9E-CB0EAE55790B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8375ADBA-F06E-4A5D-A670-312443E6C7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8375ADBA-F06E-4A5D-A670-312443E6C7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8375ADBA-F06E-4A5D-A670-312443E6C7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8375ADBA-F06E-4A5D-A670-312443E6C7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5370F067-ECF2-43D4-8FD1-B949DD07D4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5370F067-ECF2-43D4-8FD1-B949DD07D4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5370F067-ECF2-43D4-8FD1-B949DD07D4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5370F067-ECF2-43D4-8FD1-B949DD07D4F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
