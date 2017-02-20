@@ -22,6 +22,6 @@ D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\BP\obj\Debug\BP.pdb
 D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\BP\obj\Debug\PorovnanieSuborov.baml
 D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\BP\obj\Debug\PorovnanieSuborov.g.cs
 D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\BP\bin\Debug\DocX.dll
-C:\Users\Peter\Source\Repos\skusamTextak\BP\bin\Debug\BP.exe.config
-C:\Users\Peter\Source\Repos\skusamTextak\BP\obj\Debug\BP.exe
-C:\Users\Peter\Source\Repos\skusamTextak\BP\obj\Debug\BP.pdb
+D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\gitTextaky\BP\bin\Debug\BP.exe.config
+D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\gitTextaky\BP\obj\Debug\BP.exe
+D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\gitTextaky\BP\obj\Debug\BP.pdb
