@@ -21,7 +21,7 @@ namespace Uzivatel
     {
         // skusanie novej vetvy
         //fgdfg dfg dfg 
-        //fg dfg dfg 
+        //fg dfg dfg kk
         public string vybranyProjekt { get; set; }
         public List<Entita> poleEntit { get; set; }
         public List<Entita> subor1 {get;set;}
