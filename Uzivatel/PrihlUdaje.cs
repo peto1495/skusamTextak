@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Uzivatel
 {
+    //trieda
     public class PrihlUdaje
     {
         public string meno {get; set;}
