@@ -1,0 +1,14 @@
+﻿<Window x:Class="BP.PrihlasovacieOkno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PrihlasovacieOkno" Height="188.06" Width="476.119">
+    <Grid>
+        <Button x:Name="OK_BUTTON" Content="ok" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="75" Click="OK_Click"/>
+        <TextBox x:Name="UzivatelTextBox" HorizontalAlignment="Left" Height="23" Margin="80,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="336"/>
+
+        <Label Content="Uzivatel" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Height="23" Width="65"/>
+        <Label Content="heslo" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="65" Height="23"/>
+        <PasswordBox x:Name="HesloTextBox" HorizontalAlignment="Left" Height="23" Margin="80,58,0,0" VerticalAlignment="Top" Width="336"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/KmenWS" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KmenWS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfWSProjekt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WSProjekt" nillable="true" type="tns:WSProjekt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWSProjekt" nillable="true" type="tns:ArrayOfWSProjekt" />
+  <xs:complexType name="WSProjekt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iD" type="xs:int" />
+      <xs:element minOccurs="0" name="nazov" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="platnyDo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="platnyOd" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="poznamka" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSProjekt" nillable="true" type="tns:WSProjekt" />
+  <xs:complexType name="ArrayOfWSEntityInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WSEntityInfo" nillable="true" type="tns:WSEntityInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWSEntityInfo" nillable="true" type="tns:ArrayOfWSEntityInfo" />
+  <xs:complexType name="WSEntityInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="iD" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="property" nillable="true" type="tns:ArrayOfWSPropertyInfo" />
+      <xs:element minOccurs="0" name="version" nillable="true" type="tns:WSVerzia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSEntityInfo" nillable="true" type="tns:WSEntityInfo" />
+  <xs:complexType name="ArrayOfWSPropertyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WSPropertyInfo" nillable="true" type="tns:WSPropertyInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWSPropertyInfo" nillable="true" type="tns:ArrayOfWSPropertyInfo" />
+  <xs:complexType name="WSPropertyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="index" type="xs:int" />
+      <xs:element minOccurs="0" name="length" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSPropertyInfo" nillable="true" type="tns:WSPropertyInfo" />
+  <xs:complexType name="WSFid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entityID" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="fkey" nillable="true" type="q1:ArrayOfint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSFid" nillable="true" type="tns:WSFid" />
+  <xs:complexType name="ArrayOfWSFid">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WSFid" nillable="true" type="tns:WSFid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWSFid" nillable="true" type="tns:ArrayOfWSFid" />
+  <xs:complexType name="WSVerzia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="updates" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="validFrom" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSVerzia" nillable="true" type="tns:WSVerzia" />
+  <xs:complexType name="ArrayOfWSData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WSData" nillable="true" type="tns:WSData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWSData" nillable="true" type="tns:ArrayOfWSData" />
+  <xs:complexType name="WSData">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="values" nillable="true" type="q3:ArrayOfanyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSData" nillable="true" type="tns:WSData" />
+  <xs:complexType name="WSEntity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WSEntityInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="data" nillable="true" type="tns:ArrayOfWSData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WSEntity" nillable="true" type="tns:WSEntity" />
+  <xs:complexType name="WSInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="method" nillable="true" type="tns:ArrayOfWSMethodInfo" />
+      <xs:element minOccurs="0" name="version" nillable="true" type="tns:WSVerzia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSInfo" nillable="true" type="tns:WSInfo" />
+  <xs:complexType name="ArrayOfWSMethodInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WSMethodInfo" nillable="true" type="tns:WSMethodInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWSMethodInfo" nillable="true" type="tns:ArrayOfWSMethodInfo" />
+  <xs:complexType name="WSMethodInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="parameter" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="prototyp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="retvalue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSMethodInfo" nillable="true" type="tns:WSMethodInfo" />
+  <xs:complexType name="ArrayOfWSDataTTP">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WSDataTTP" nillable="true" type="tns:WSDataTTP" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWSDataTTP" nillable="true" type="tns:ArrayOfWSDataTTP" />
+  <xs:complexType name="WSDataTTP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tab10Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab10Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab11Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab11Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab12Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab12Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab13Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab13Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab1Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab1DispPracovisko" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab1RadiovySystem" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab1TrakcnaSustava" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab1Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab2Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab2Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab3aData" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab3aZahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab3bData" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab3bZahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab4Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab4TratETCS" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab4Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab5Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab5Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab6aData" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6aUsekTrate" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6aZabrzdnaVzdialenost" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6aZahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab6b0Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b0UsekTrate" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b0ZabrzdnaVzdialenost" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b0Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab6b1Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b1UsekTrate" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b1ZabrzdnaVzdialenost" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b1Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab6b2Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b2UsekTrate" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b2ZabrzdnaVzdialenost" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b2Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab6b3Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b3UsekTrate" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b3ZabrzdnaVzdialenost" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b3Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab6b4Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b4UsekTrate" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b4ZabrzdnaVzdialenost" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b4Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab6b5Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b5UsekTrate" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b5ZabrzdnaVzdialenost" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab6b5Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab7Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab7Zahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab8aData" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab8aRekuperaciaData" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab8aRekuperaciaZahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab8aZahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab8bData" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab8bZahlavie" nillable="true" type="tns:WSData" />
+      <xs:element minOccurs="0" name="tab9Data" nillable="true" type="tns:ArrayOfWSData" />
+      <xs:element minOccurs="0" name="tab9Zahlavie" nillable="true" type="tns:WSData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WSDataTTP" nillable="true" type="tns:WSDataTTP" />
+</xs:schema>

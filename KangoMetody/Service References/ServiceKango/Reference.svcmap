@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ff377167-ee57-427b-b386-5348f55e5f7d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://poseidon.kst.fri.uniza.sk/kangostabil/apps/export2/KmenWebService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="KmenWebService.disco" MetadataType="Disco" ID="691a2629-41e1-4a95-a4d2-c912b403c0f6" SourceId="1" SourceUrl="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc?disco" />
+    <MetadataFile FileName="KmenWebService.xsd" MetadataType="Schema" ID="76cf4ad1-59f9-4efd-966f-f0f1e13eaba1" SourceId="1" SourceUrl="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc?xsd=xsd1" />
+    <MetadataFile FileName="KmenWebService1.xsd" MetadataType="Schema" ID="1ad96e81-117f-463b-9b6e-81a8aae97315" SourceId="1" SourceUrl="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc?xsd=xsd0" />
+    <MetadataFile FileName="KmenWebService2.xsd" MetadataType="Schema" ID="44f2a87d-8f1f-468c-a7fa-c1147584d769" SourceId="1" SourceUrl="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc?xsd=xsd3" />
+    <MetadataFile FileName="KmenWebService3.xsd" MetadataType="Schema" ID="8c413190-4b86-4794-83f3-6c25b8af488d" SourceId="1" SourceUrl="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc?xsd=xsd2" />
+    <MetadataFile FileName="KmenWebService.wsdl" MetadataType="Wsdl" ID="f055f5a2-5d44-4022-931f-7419bdf90c50" SourceId="1" SourceUrl="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
