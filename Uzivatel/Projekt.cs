@@ -20,6 +20,7 @@ namespace Uzivatel
     public class Projekt
     {
         // len tak skuska gitu
+        //rtdfyguhijol
         public string vybranyProjekt { get; set; }
         public List<Entita> poleEntit { get; set; }
         public List<Entita> subor1 {get;set;}
