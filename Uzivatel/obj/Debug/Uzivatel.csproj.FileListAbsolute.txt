@@ -1,6 +1,0 @@
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\bin\Debug\Uzivatel.dll
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\bin\Debug\Uzivatel.pdb
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\obj\Debug\Uzivatel.dll
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\obj\Debug\Uzivatel.pdb
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\bin\Debug\DocX.dll
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\obj\Debug\Uzivatel.csprojResolveAssemblyReference.cache
