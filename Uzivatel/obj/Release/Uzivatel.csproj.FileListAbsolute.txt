@@ -1,5 +1,0 @@
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\bin\Release\Uzivatel.dll
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\bin\Release\Uzivatel.pdb
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\bin\Release\DocX.dll
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\obj\Release\Uzivatel.dll
-D:\peter\prace v skole\VYSOKÁ ŠKOLA\Bakalárka\BP\Uzivatel\obj\Release\Uzivatel.pdb

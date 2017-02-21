@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
-  <contractRef ref="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc?wsdl" docRef="http://poseidon.kst.fri.uniza.sk/KangoStabil/apps/export2/KmenWebService.svc" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
-</discovery>
