@@ -10,6 +10,8 @@ namespace konzolka
     {
         static void Main(string[] args)
         {
+            //nejaky ten komentariček
+
         }
     }
 }
